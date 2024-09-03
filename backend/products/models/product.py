@@ -12,3 +12,5 @@ class Product(models.Model):
     class Meta:
         # ordering
         pass
+    def __str__(self):
+        return f"{self.title}: R${self.price}"
