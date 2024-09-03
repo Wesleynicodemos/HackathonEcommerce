@@ -12,4 +12,4 @@ class Order(models.Model):
         pass
     
     def __str__(self):
-        pass
+        return f"{self.total}: {self.shipping_address}"

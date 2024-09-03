@@ -12,4 +12,4 @@ class Payment(models.Model):
         # ordering = []
         pass
     def __str__(self):
-        pass
+        return f"R${self.amount}: {self.payment_status}"

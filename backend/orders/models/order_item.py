@@ -12,4 +12,4 @@ class OrderItem(models.Model):
         # ordering = []
         pass
     def __str__(self):
-        pass
+        return f"{self.order_id}, {self.product_id} - {self.quantity} - R${self.price}"
