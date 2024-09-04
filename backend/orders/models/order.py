@@ -1,7 +1,6 @@
 from django.db import models
 
 class Order(models.Model):
-    # user_id = models.ForeignKey(User, null=False, on_delete=models.CASCADE)
     shipping_address = models.CharField(max_length=255)
     status = models.CharField(max_length=20 , choices=[('pending', 'Pending'), ('processing', 'Processing'), ('shipped', 'Shipped'), ('delivered', 'Delivered')], default='pending')
     creation_date = models.DateTimeField(auto_now_add=True)
